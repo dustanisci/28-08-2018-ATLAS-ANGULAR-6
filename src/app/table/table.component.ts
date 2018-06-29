@@ -18,25 +18,24 @@ export class TableComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  ngOnInit() {
+  public ngOnInit() {
     this.lista();
   }
 
   constructor(private lucroService: LucroService) { }
 
-  lista(){
+  private lista(){
     this.lucroService.lista()
       .then(lucros => {
         this.lucros = lucros;
         this.dataSource = new MatTableDataSource<LucroComponent>(this.lucros);
         this.dataSource.paginator = this.paginator;
-        this.dataSource._orderData
+        this.dataSource._orderData;
         console.log(this.lucros);
-      })
+      });
   }
 
-  applyFilter(filterValue: string) {
+  private applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
-  
 }

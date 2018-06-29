@@ -10,7 +10,6 @@ export class LucroService {
     return this.http.get('https://www.mocky.io/v2/5b2c010d300000100023487a')
       .toPromise()
       .then(response => response.json())
+      .catch(err => console.log(err));
   }
-
-  
 }
