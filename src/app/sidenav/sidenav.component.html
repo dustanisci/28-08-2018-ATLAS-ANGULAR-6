@@ -4,11 +4,5 @@
     <app-sidenav-item></app-sidenav-item>
   </mat-drawer>
 
-  <div class="example-sidenav-content">
-    <div ng-style="{'background-image':'assets/img/fundo.png'}">
-      <mat-icon mat-button (click)="drawer.toggle()">menu</mat-icon>
-      <app-topo></app-topo>
-    </div>
-  </div>
-
+  <app-content mat-button (click)="drawer.toggle()"></app-content>
 </mat-drawer-container>

@@ -13,7 +13,6 @@ export class SidenavComponent {
   }
 
   menuResponsivoResize(event) {
-    console.log(event);
     if(event.target.innerWidth > 768){
       this.opened = true;
     }else{
@@ -28,6 +27,4 @@ export class SidenavComponent {
       this.opened = false;
     }
   }
-
- 
 }

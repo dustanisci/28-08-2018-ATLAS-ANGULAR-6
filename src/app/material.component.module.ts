@@ -4,6 +4,9 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material';
 
 
 
@@ -12,7 +15,10 @@ import {MatChipsModule} from '@angular/material/chips';
     MatPaginatorModule,
     MatTableModule,
     MatSidenavModule,
-    MatChipsModule
+    MatChipsModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule
     
   ],
   exports: [
@@ -20,7 +26,10 @@ import {MatChipsModule} from '@angular/material/chips';
     MatPaginatorModule,
     MatTableModule,
     MatSidenavModule,
-    MatChipsModule
+    MatChipsModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class MaterialComponentModule { }

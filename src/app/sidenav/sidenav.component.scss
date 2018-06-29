@@ -4,26 +4,17 @@
   position:absolute;
 }
 
-.example-sidenav-content {
-  height: 100%;
-  background:#EDF3F0;
-}
-
-.example-sidenav-content > div{
-  height:100%;
-}
-
 .example-sidenav{
   width:250px;
   background: linear-gradient(#00B286, #0081A7);
 }
 
-mat-icon{
-  display:none;
+.example-sidenav-content{
+  background-position: right;
+  height:100%;
+  width:100%;
 }
 
-@media screen and (max-width: 768px) {
-  mat-icon{
-    display:inline;
-  }
+.mat-drawer-content{
+  background:#EDF3F0;
 }

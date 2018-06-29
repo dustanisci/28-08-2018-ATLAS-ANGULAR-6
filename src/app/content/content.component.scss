@@ -1,0 +1,20 @@
+.example-sidenav-content{
+    background-position: right;
+    height:100%;
+    width:100%;
+  }
+
+  mat-icon{
+    display:none;
+    font-size:50px;
+    position:absolute;
+    z-index:1;
+    margin-top:6px;
+    margin-left:10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    mat-icon{
+      display:inline;
+    }
+  }
