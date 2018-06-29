@@ -1,0 +1,21 @@
+#topo{
+    width:100%;
+    position:relative;
+    background:#FFF;
+    height:65px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2199999988079071);
+    font-size:14px;
+    font-family:"Roboto-Medium";
+}
+
+.align{
+    float:right;
+    margin-right:132px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.align img{
+    margin-right:20px;
+}

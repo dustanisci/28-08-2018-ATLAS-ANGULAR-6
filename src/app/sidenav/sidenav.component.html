@@ -1,0 +1,14 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" (window:resize)="menuResponsivoResize($event)" [opened]="opened">
+    <app-logo></app-logo>
+    <app-sidenav-item></app-sidenav-item>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <div ng-style="{'background-image':'assets/img/fundo.png'}">
+      <mat-icon mat-button (click)="drawer.toggle()">menu</mat-icon>
+      <app-topo></app-topo>
+    </div>
+  </div>
+
+</mat-drawer-container>
