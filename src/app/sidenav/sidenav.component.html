@@ -1,8 +1,13 @@
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side" (window:resize)="menuResponsivoResize($event)" [opened]="opened">
+<mat-drawer-container class="navbar-container" autosize>
+  <mat-drawer #drawer class="navbar-sidenav" mode="side" (window:resize)="menuResponsivoResize($event)" [opened]="opened">
     <app-logo></app-logo>
     <app-sidenav-item></app-sidenav-item>
   </mat-drawer>
 
-  <app-content mat-button (click)="drawer.toggle()"></app-content>
+  <div class="navbar-sidenav-content" [ngStyle]="{'background':'url(assets/img/fundo.png) no-repeat 100%', 'background-position' : 'right bottom'}">
+    <mat-icon class="icon-menu" (click)="drawer.toggle()" >menu</mat-icon>
+    <app-topo></app-topo>
+    <app-table></app-table>
+    <app-footer></app-footer>
+  </div>
 </mat-drawer-container>

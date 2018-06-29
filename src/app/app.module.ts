@@ -16,7 +16,6 @@ import { LucroComponent } from './lucro/lucro.component';
 import { LucroService } from './lucro.service';
 import {MatPaginatorIntl } from '@angular/material';
 import { getDutchPaginatorIntl } from './table/traducao-paginator';
-import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,6 @@ import { ContentComponent } from './content/content.component';
     FooterComponent,
     TableComponent,
     LucroComponent,
-    ContentComponent,
   ],
   imports: [
     BrowserModule,
