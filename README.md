@@ -1,4 +1,5 @@
-# Atlas
+# Atlas Quantum
+28/08/2018 - Atlas Quantum com Material Design e REST (Mock)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
