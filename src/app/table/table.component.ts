@@ -31,7 +31,6 @@ export class TableComponent implements OnInit {
         this.dataSource = new MatTableDataSource<LucroComponent>(this.lucros);
         this.dataSource.paginator = this.paginator;
         this.dataSource._orderData;
-        console.log(this.lucros);
       });
   }
 
