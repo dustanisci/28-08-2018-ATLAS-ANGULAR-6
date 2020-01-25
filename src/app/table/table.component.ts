@@ -1,8 +1,7 @@
 import { Component, OnInit, ViewChild, Injectable } from '@angular/core';
 import { MatPaginator, MatTableDataSource } from '@angular/material';
-import { LucroComponent } from '../lucro/lucro.component';
 import { LucroService } from '../lucro.service';
-import {MatPaginatorIntl } from '@angular/material';
+import { Lucro } from './lucro';
 
 @Component({
   selector: 'app-table',
@@ -13,8 +12,8 @@ import {MatPaginatorIntl } from '@angular/material';
 export class TableComponent implements OnInit {
 
   displayedColumns: string[] = ['data', 'moeda', 'rendimentos', 'porcentagem'];
-  dataSource = new MatTableDataSource<LucroComponent>();
-  lucros:LucroComponent[];
+  dataSource = new MatTableDataSource<Lucro>();
+  lucros:Lucro[];
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -28,7 +27,7 @@ export class TableComponent implements OnInit {
     this.lucroService.lista()
       .then(lucros => {
         this.lucros = lucros;
-        this.dataSource = new MatTableDataSource<LucroComponent>(this.lucros);
+        this.dataSource = new MatTableDataSource<Lucro>(this.lucros);
         this.dataSource.paginator = this.paginator;
         this.dataSource._orderData;
       });

@@ -12,7 +12,6 @@ import { SidenavItemComponent } from './sidenav-item/sidenav-item.component';
 import { TopoComponent } from './topo/topo.component';
 import { FooterComponent } from './footer/footer.component';
 import { TableComponent } from './table/table.component';
-import { LucroComponent } from './lucro/lucro.component';
 import { LucroService } from './lucro.service';
 import {MatPaginatorIntl } from '@angular/material';
 import { getDutchPaginatorIntl } from './table/traducao-paginator';
@@ -26,7 +25,6 @@ import { getDutchPaginatorIntl } from './table/traducao-paginator';
     TopoComponent,
     FooterComponent,
     TableComponent,
-    LucroComponent,
   ],
   imports: [
     BrowserModule,
