@@ -1,1 +1,20 @@
-<app-sidenav></app-sidenav>
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side" (window:resize)="menuResponsivoResize($event)" [opened]="opened">
+    <app-logo></app-logo>
+
+    <mat-chip-list>
+      <div class="item">
+        <mat-chip>
+          <mat-icon>home</mat-icon> Lucros
+        </mat-chip>
+      </div>
+    </mat-chip-list>
+  </mat-drawer>
+
+  <main>
+    <mat-icon class="icon-menu" (click)="drawer.toggle()">menu</mat-icon>
+    <app-header></app-header>
+    <app-profit-table></app-profit-table>
+    <app-footer></app-footer>
+  </main>
+</mat-drawer-container>

@@ -1,0 +1,142 @@
+.bloco-table {
+  margin: 20px 70px 0 70px;
+  background: #FFF;
+  position: relative;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.23999999463558197), 0 0 2px 0 rgba(0, 0, 0, 0.11999999731779099);
+  padding: 10px 25px 35px 25px;
+}
+
+.bloco-table>h2 {
+  font-family: "Roboto-Medium";
+  color: #3C3C3C;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.mat-elevation-z8 {
+  box-shadow: none;
+}
+
+table {
+  width: 100%;
+  font-size: 12px;
+}
+
+table tr {
+  background: #F8F8F8;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.23999999463558197), 0 0 2px 0 rgba(0, 0, 0, 0.11999999731779099);
+}
+
+table th {
+  background: #fff;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.05000000074505806);
+  border-radius: 24px;
+  width: 306px;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 50px;
+  right: 0;
+  font-family: "Roboto-Regular";
+}
+
+input:focus {
+  outline: none;
+}
+
+i {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 20px;
+  background: linear-gradient(#00B286, #0081A7);
+  padding: 9px;
+  border-radius: 20px;
+  color: #FFF;
+  text-align: center;
+}
+
+.search {
+  float: right;
+  position: relative;
+}
+
+h1 {
+  font-family: "Gilroy-ExtraBold";
+  font-size: 36px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.topo-sub h2 {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  margin-left: 0;
+  margin-right: 0;
+  display: inline;
+}
+
+.topo-sub {
+  margin: 0 70px 40px 70px;
+  display: block;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .search {
+    float: none;
+    margin-top: 20px;
+    display: block;
+  }
+
+  i {
+    left: -40px;
+    position: relative;
+  }
+
+  input {
+    margin-bottom: 0px;
+    padding-right: 30px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .bloco-table {
+    margin: 0 15px;
+  }
+
+  .bloco-table h2 {
+    font-size: 17px;
+  }
+
+  input {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+
+  i {
+    position: absolute;
+    left: 250px;
+  }
+
+  .topo-sub {
+    margin: 0 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+}

@@ -1,25 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 @font-face {
-    font-family: "Roboto-Medium";
-    src: url("/assets/fonts/Roboto-Medium.ttf");
+  font-family: "Roboto-Medium";
+  src: url("/assets/fonts/Roboto-Medium.ttf");
 }
 
 @font-face {
-    font-family: "Roboto-Regular";
-    src: url("/assets/fonts/Roboto-Regular.ttf");
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Gilroy-ExtraBold";
-    src: url("/assets/fonts/gilroy-extrabold.ttf");
+  font-family: "Gilroy-ExtraBold";
+  src: url("/assets/fonts/gilroy-extrabold.ttf");
 }
 
-body{
-    margin:0;
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
-.mat-chip-list-wrapper{
-    margin:0 !important;
+.mat-chip-list-wrapper {
+  margin: 0 !important;
 }

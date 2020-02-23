@@ -1,0 +1,54 @@
+footer {
+  position: relative;
+  bottom: 0;
+  height: 5%;
+  width: 100%;
+  margin-top: 14px;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+  }
+
+  .col {
+    position: relative;
+    display: inline;
+
+    @media screen and (max-width: 850px) {
+      display: block;
+      margin: 20px 70px;
+      float: none !important;
+      text-align: center;
+    }
+
+    &:first-child {
+      font-family: "Roboto-Regular";
+      font-size: 14px;
+      margin-left: 70px;
+    }
+
+    &:last-child {
+      float: right;
+      margin-right: 70px;
+
+      i {
+        font-size: 22px;
+        color: #9B9B9B;
+        margin: 0 10px;
+
+        &:first-child {
+          @media screen and (max-width: 850px) {
+            margin-left: 0;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+
+        }
+      }
+    }
+  }
+}
