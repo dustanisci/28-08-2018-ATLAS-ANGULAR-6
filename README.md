@@ -12,4 +12,5 @@
   <li>SCSS / CSS 3</li>
   <li>TypeScript</li>
   <li>JavaScript</li>
+  <li>Responsivo</li>
 </ul>
