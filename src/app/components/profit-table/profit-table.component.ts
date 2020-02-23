@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatTableDataSource, MatPaginator } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import { Profit } from 'src/app/model/profit';
 import { ProfitTableService } from './profit-table.service';
 
@@ -14,7 +15,7 @@ export class ProfitTableComponent implements OnInit {
   public dataSource = new MatTableDataSource<Profit>();
   public profits: Profit[] = new Array<Profit>();
 
-  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   public ngOnInit() {
     this.getProfits();
