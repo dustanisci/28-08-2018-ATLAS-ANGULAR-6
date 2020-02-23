@@ -1,6 +1,6 @@
 # Rendimento de bitcoins
 
-<b>Descrição:</b> Exemplo de rendimentos de bitcoins em Angular 9, utilizado uma tabela com paginação e sendo possível pesquisar pelo campo de busca.
+<b>Descrição:</b> Exemplo de rendimentos de bitcoins em Angular 9, utilizado uma tabela com paginação e sendo possível pesquisar pelo campo de busca. Acessível em celulares, tablets, notebooks e desktops.
 
 <b>Endereço de acesso:</b> https://dustanisci.github.io/bitcoin-yield-angular9/
 
