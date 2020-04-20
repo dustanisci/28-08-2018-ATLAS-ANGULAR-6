@@ -1,4 +1,4 @@
-# Rendimento de bitcoins
+# Rendimento de bitcoins 
 
 <b>Descrição:</b> Exemplo de rendimentos de bitcoins em Angular 9, utilizado uma tabela com paginação e sendo possível pesquisar pelo campo de busca. Acessível em celulares, tablets, notebooks e desktops.
 
